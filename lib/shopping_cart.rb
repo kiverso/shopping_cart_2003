@@ -19,4 +19,8 @@ class ShoppingCart
   def products_by_category(category)
     products.select {|product| product.category == category}
   end
+
+  def details
+    {name: @name, capacity: @capacity}
+  end
 end
