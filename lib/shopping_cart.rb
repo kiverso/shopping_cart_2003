@@ -11,4 +11,8 @@ class ShoppingCart
     @products << product
     @total_number_of_products += product.quantity
   end
+
+  def is_full?
+    @total_number_of_products > @capacity
+  end
 end
